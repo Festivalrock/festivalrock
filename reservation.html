@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Festival Rock</title>
+    <style>
+        /* Couleurs et typographie principales */
+        body {
+            background-color: #4c3d74;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 30px;
+            background-color: #7362a1;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1em;
+            margin-top: 10px;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        input, select, button {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        input, select {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        button {
+            background-color: #ef5350;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d32f2f;
+        }
+
+        .footer {
+            font-size: 0.8em;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Titre de la page de réservation -->
+        <h1>Réserver vos billets</h1>
+        <p>Assurez-vous votre place pour le Festival Rock de Maubeuge !</p>
+
+        <!-- Formulaire de réservation -->
+        <form action="confirmation.html" method="post">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tickets">Nombre de billets</label>
+            <select id="tickets" name="tickets" required>
+                <option value="1">1 billet</option>
+                <option value="2">2 billets</option>
+                <option value="3">3 billets</option>
+                <option value="4">4 billets</option>
+                <option value="5">5 billets</option>
+            </select>
+
+            <label for="message">Message (optionnel)</label>
+            <input type="text" id="message" name="message" placeholder="Vos demandes particulières">
+
+            <button type="submit">Réserver maintenant</button>
+        </form>
+
+        <!-- Pied de page -->
+        <div class="footer">
+            © 2024 Festival Rock - Maubeuge. Tous droits réservés.
+        </div>
+    </div>
+</body>
+</html>

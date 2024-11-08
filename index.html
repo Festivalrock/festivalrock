@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Rock - Maubeuge</title>
+    <style>
+        /* Couleurs et typographie principales */
+        body {
+            background-color: #4c3d74;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 30px;
+            background-color: #7362a1;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Grand titre du festival */
+        .title {
+            font-size: 4.5em;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0;
+            position: relative;
+        }
+
+        .title span {
+            font-family: 'Brush Script MT', cursive;
+            color: #ef5350;
+            font-size: 0.5em;
+            position: absolute;
+            top: 0.3em;
+            left: 0.5em;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 10px 0;
+        }
+
+        .info {
+            font-size: 1.2em;
+            margin: 15px 0 25px;
+        }
+
+        /* Image */
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        /* Section des groupes */
+        .bands {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        /* Date et horaire */
+        .date-time {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 1.3em;
+            border-radius: 5px;
+        }
+
+        /* Bouton de réservation */
+        .reservation {
+            background-color: #ef5350;
+            color: #ffffff;
+            padding: 15px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .reservation:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Pied de page */
+        .footer {
+            font-size: 0.9em;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        /* Style pour les icônes d'éclair */
+        .icon {
+            color: #ffffff;
+            padding: 0 5px;
+        }
+
+        /* Liens */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Grand Titre du Festival -->
+        <h1 class="title">FESTIVAL</h1>
+        <p class="subtitle">La ville de Maubeuge présente</p>
+
+        <!-- Image principale -->
+        <img src="concert.jpg" alt="Festival Image" class="image">
+
+        <!-- Informations sur les groupes -->
+        <div class="bands">
+            CELLAR BROTHER <span class="icon">⚡</span> IO <span class="icon">⚡</span> WHATEVER
+        </div>
+
+        <!-- Date et horaire -->
+        <div class="date-time">
+            26 AVRIL <span class="icon">⚡</span> 19H - 02H
+        </div>
+
+        <!-- Lien de réservation -->
+        <a href="reservation.html" class="reservation">
+            Réserver vos billets
+        </a>
+
+        <!-- Lien vers le site -->
+        <div class="footer">
+            <a>© 2024 Festival Rock - Maubeuge. Tous droits réservés. Reproduction ou distribution interdite sans autorisation.  </a>
+        </div>
+    </div>
+</body>
+</html>
