@@ -92,13 +92,13 @@
         <p>Assurez-vous votre place pour le Festival Rock de Maubeuge !</p>
 
         <!-- Formulaire de réservation -->
-        <form action="confirmation.html" method="post">
+        <form action="confirmation.html" method="get">
             <label for="name">Nom complet</label>
             <input type="text" id="name" name="name" required>
-
+        
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-
+        
             <label for="tickets">Nombre de billets</label>
             <select id="tickets" name="tickets" required>
                 <option value="1">1 billet</option>
@@ -107,12 +107,13 @@
                 <option value="4">4 billets</option>
                 <option value="5">5 billets</option>
             </select>
-
+        
             <label for="message">Message (optionnel)</label>
             <input type="text" id="message" name="message" placeholder="Vos demandes particulières">
-
+        
             <button type="submit">Réserver maintenant</button>
         </form>
+        
 
         <!-- Pied de page -->
         <div class="footer">
